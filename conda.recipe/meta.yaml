@@ -1,0 +1,23 @@
+{% set data = load_setup_py_data(setup_file='setup.py') %}
+
+package:
+  name: pyrsvd
+  version: {{data.version}}
+
+source:
+  path: ..
+
+build:
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    {% for dep in data['install_requires'] %}
+    - {{ dep.lower() }}
+    {% endfor %}
+  run:
+    - python
+    {% for dep in data['install_requires'] %}
+    - {{ dep.lower() }}
+    {% endfor %}
