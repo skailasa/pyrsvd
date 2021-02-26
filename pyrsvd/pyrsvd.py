@@ -13,7 +13,19 @@ TPB = 32
 
 def svd(A, K, full_matrices=False):
     """
-    Compute SVD of a dense matrix A.
+    Compute randomised SVD of a dense matrix A on CUDA device.
+
+    Parameters:
+    -----------
+    A : np.array(shape=(M, N), dtype=np.float32)
+        Compute the Randomised SVD of a 'thin' and 'tall' matrix, i.e. M > N
+    K : np.int32
+        Target compression rank.
+
+    Returns:
+    --------
+    (np.array(dtype=np.float32))
+        Return CPU arrays of (u, s, vt) respectively.
     """
 
     width = len(A[0])
