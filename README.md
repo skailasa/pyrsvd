@@ -24,7 +24,7 @@ import pyrsvd
 # Instantiate a 'tall' and 'thin' matrix to compress
 M = 123
 N = 45
-A = np.array(M, N)
+A = np.random.rand(M, N)
 
 # Choose a target rank
 K = 5
