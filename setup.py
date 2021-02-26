@@ -1,9 +1,9 @@
 import os
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 HERE = os.path.abspath(os.path.dirname(__file__))
-PATH_VERSION = os.path.join(HERE, 'src', '__version.py')
+PATH_VERSION = os.path.join(HERE, 'pyrsvd', '__version.py')
 
 ABOUT = {}
 
@@ -11,10 +11,10 @@ with open(PATH_VERSION, mode='r', encoding='utf-8') as f:
     exec(f.read(), ABOUT)
 
 requirements = [
-    "numba",
-    "numpy",
-    "cudatoolkit",
-    "pytest",
+    "cupy==8.3.0",
+    "numba==0.51.2",
+    "numpy==1.19.2",
+    "pytest==6.2.2",
 ]
 
 
@@ -26,9 +26,6 @@ setup(
     author="Srinath Kailasa",
     author_email='srinathkailasa@gmail.com',
     url='https://github.com/skailasa/pyrsvd',
-    packages=find_packages(
-        exclude=['*.test']
-    ),
     zip_safe=False,
     install_requires=requirements,
     keywords='pyrsvd',
