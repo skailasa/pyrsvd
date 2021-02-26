@@ -1,5 +1,5 @@
-
-import src.__version as __version
+from pyrsvd.pyrsvd import svd
+import pyrsvd.__version as __version
 
 __version__ = __version.__version__
 __description__ = __version.__description__
