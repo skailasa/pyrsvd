@@ -5,12 +5,6 @@ Randomised Singular Value Decompositions
 import cupy as cp
 
 
-BLOCK_HEIGHT = 1024
-BLOCK_WIDTH = 32
-
-TPB = 32
-
-
 def svd(A, K, full_matrices=False):
     """
     Compute randomised SVD of a dense matrix A on CUDA device.
