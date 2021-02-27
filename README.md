@@ -38,9 +38,11 @@ Benchmarked for 'thin' and 'tall' matrices, versus NumPy implementation on a 8th
 
 ### 1) Dense Matrix
 
+<p style="text-align:center;">
 <img src="static/benchmark.jpg"
      alt="Dense Benchmark"
-     class="center" />
+     width="200px"/>
+</p>
 
 
 ## References
