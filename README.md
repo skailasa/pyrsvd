@@ -34,7 +34,7 @@ u, s, vt = pyrsvd.svd(A, K)
 
 ## Benchmark
 
-Benchmarked for 'thin' and 'tall' matrices, versus NumPy implementation on a 8th generation Inel i7 CPU and an NVidia Quadro RTX 3000 Mobile GPU, including data transfer times. Obviiously performance will be improved when running directly on GPU data!
+Benchmarked for 'thin' and 'tall' matrices, versus NumPy implementation on a 8th generation Intel i7 CPU and an NVidia Quadro RTX 3000 Mobile GPU, including data transfer times. Obviiously performance will be improved when running directly on GPU data!
 
 ### 1) Dense Matrix
 
