@@ -40,8 +40,7 @@ Benchmarked for 'thin' and 'tall' matrices, versus NumPy implementation on a 8th
 
 <p style="text-align:center;">
 <img src="static/benchmark.jpg"
-     alt="Dense Benchmark"
-     width="500px"/>
+     alt="Dense Benchmark"/>
 </p>
 
 
